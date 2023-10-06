@@ -36,19 +36,19 @@ public class Main {
         System.out.printf("Currently there are %d cats in the program%n", Cat.getCount());
 
         // TODO: (3) each cat should meow
-        for(int i = 0; i < cats.length; ++i) {
-        	cats[i].meow();
+        for(Cat c : cats) {
+        	c.meow();
         }
 
         // TODO: (4) each cat named Kit should meow
-        for(int i = 0; i < cats.length; ++i) {
-        	if(cats[i].getName() == "Kit") cats[i].meow();
+        for(Cat c : cats) {
+        	if(c.getName() == "kit") c.meow();
         }
 
         // TODO: (5) only the first cat named Kit should meow
-        for(int i = 0; i < cats.length; ++i) {
-        	if(cats[i].getName() == "Kit") {
-        		cats[i].meow();
+        for(Cat c : cats) {
+        	if(c.getName() == "kit") {
+        		c.meow();
         		break;
         	}
         }
