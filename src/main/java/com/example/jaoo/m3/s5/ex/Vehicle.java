@@ -14,11 +14,22 @@ import java.util.logging.Logger;
  */
 public class Vehicle {
     private static final Logger log = Logger.getGlobal();
-
     /**
      * No-arg constructor
      */
     public Vehicle() {
         log.info("Vehicle created");
+    }
+    
+    public void steerRight() {
+    	System.out.println(getClass().getSimpleName() + " Steer right standard");
+    }
+    
+    public void steerLeft() {
+    	System.out.println(getClass().getSimpleName() + " Steer left standard");
+    }
+    
+    public void brake() {
+    	System.out.println("brake");
     }
 }
