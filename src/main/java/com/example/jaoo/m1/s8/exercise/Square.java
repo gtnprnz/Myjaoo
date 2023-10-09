@@ -12,6 +12,7 @@ package com.example.jaoo.m1.s8.exercise;
  */
 public class Square {
     // TODO: every square should have its own side length
+	private double side;
 
     /**
      * Constructor
@@ -20,6 +21,7 @@ public class Square {
      */
     public Square(double side) {
         // TODO: initialize the current side length
+    	this.side = side;
     }
 
     /**
@@ -28,7 +30,8 @@ public class Square {
      * @return the square area
      */
     public double area() {
-        throw new UnsupportedOperationException("Not yet implemented");
+        return side * side;
+    	//throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
@@ -37,6 +40,7 @@ public class Square {
      * @return the square perimeter
      */
     public double perimeter() {
-        throw new UnsupportedOperationException("Not yet implemented");
+        return side * 4;
+    	//throw new UnsupportedOperationException("Not yet implemented");
     }
 }

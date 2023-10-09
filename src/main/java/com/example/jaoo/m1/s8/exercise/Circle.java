@@ -12,7 +12,7 @@ package com.example.jaoo.m1.s8.exercise;
  */
 public class Circle {
     // TODO: every circle should have its own radius
-
+	private double radius;
     /**
      * Constructor
      * 
@@ -20,6 +20,7 @@ public class Circle {
      */
     public Circle(double radius) {
         // TODO: initialize the current circle radius
+    	this.radius = radius;
     }
 
     /**
@@ -28,7 +29,8 @@ public class Circle {
      * @return the circle area
      */
     public double area() {
-        throw new UnsupportedOperationException("Not yet implemented");
+        //throw new UnsupportedOperationException("Not yet implemented");
+        return Math.PI * Math.pow(radius, 2);
     }
 
     /**
@@ -37,6 +39,7 @@ public class Circle {
      * @return the circle perimeter
      */
     public double perimeter() {
-        throw new UnsupportedOperationException("Not yet implemented");
+        //throw new UnsupportedOperationException("Not yet implemented");
+    	return 2 * Math.PI * radius;
     }
 }
