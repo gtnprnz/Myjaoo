@@ -16,8 +16,10 @@ public abstract class Actor {
      * 
      * @param name the actor name
      */
+	protected String name;
     protected Actor(String name) {
         // TODO
+    	this.name = name;
     }
 
     /**
@@ -27,4 +29,11 @@ public abstract class Actor {
      * @return true if the current actor wins
      */
     public abstract boolean fight(Actor enemy);
+    public abstract int getPower();
+    public abstract void setPower(int power);
+	@Override
+	public String toString() {
+		return "name= " + name;
+	}
+    
 }
