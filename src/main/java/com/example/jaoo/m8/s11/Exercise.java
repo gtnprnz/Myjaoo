@@ -26,11 +26,14 @@ public class Exercise {
 		HashMap<Integer, Integer> nonDuplicated = new HashMap<>();
 		ArrayList<Integer> list = new ArrayList<>();
 		for (int i : data) {
+			nonDuplicated.put(i, nonDuplicated.getOrDefault(i, 0) + 1);
+			/*
 			if (nonDuplicated.containsKey(i)) {
 				nonDuplicated.put(i, nonDuplicated.get(i) + 1);
 			} else {
 				nonDuplicated.put(i, 1);
 			}
+			*/
 		}
 		for (Integer i : nonDuplicated.keySet()) {
 			if (nonDuplicated.get(i) == 1) {
